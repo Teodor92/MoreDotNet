@@ -136,6 +136,8 @@
     <Compile Include="Extensions\Common\StringExtensions\ToTitleCaseTests.cs" />
     <Compile Include="Extensions\Common\StringExtensions\CaseToWordsTests.cs" />
     <Compile Include="Extensions\Common\TypeExtensions\TypeExtensionsTests.cs" />
+    <Compile Include="Helpers\FileHelpers\SaveByteArrayToTempFileTests.cs" />
+    <Compile Include="Helpers\FileHelpers\SaveStringToTempFileTests.cs" />
     <Compile Include="Models\FakeSerializationClass.cs" />
     <Compile Include="Extensions\Common\XmlExtensions\XmlExtensionsTests.cs" />
     <Compile Include="Models\XmlSerializableModel.cs" />
