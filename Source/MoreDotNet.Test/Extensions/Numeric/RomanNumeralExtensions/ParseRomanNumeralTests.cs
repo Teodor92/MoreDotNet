@@ -1,6 +1,7 @@
 ﻿namespace MoreDotNet.Tests.Extensions.Numeric.RomanNumeralExtensions
 {
     using MoreDotNet.Extensions.Numeric;
+    using System;
     using Xunit;
 
     public class ParseRomanNumeralTests
@@ -291,6 +292,22 @@
             var input = "MMMCMXCIX";
             var actual = input.ParseRomanNumeral();
             Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void ParseRomanNumeral_GivenEmptyString_ShouldThrowArgumentException()
+        {
+            var input = String.Empty;
+            var exception = Assert.Throws<ArgumentException>(() => input.ParseRomanNumeral());
+            Assert.Equal("Empty or invalid Roman numeral string.\r\nParameter name: input", exception.Message);
+        }
+
+        [Fact]
+        public void ParseRomanNumeral_GivenIIII_ShouldThrowArgumentException()
+        {
+            var input = "IIII";
+            var exception = Assert.Throws<ArgumentException>(() => input.ParseRomanNumeral());
+            Assert.Equal("Empty or invalid Roman numeral string.\r\nParameter name: input", exception.Message);
         }
     }
 }
