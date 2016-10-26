@@ -297,7 +297,7 @@
         [Fact]
         public void ParseRomanNumeral_GivenEmptyString_ShouldThrowArgumentException()
         {
-            var input = String.Empty;
+            var input = string.Empty;
             var exception = Assert.Throws<ArgumentException>(() => input.ParseRomanNumeral());
             Assert.Equal("Empty or invalid Roman numeral string.\r\nParameter name: input", exception.Message);
         }
@@ -306,6 +306,14 @@
         public void ParseRomanNumeral_GivenIIII_ShouldThrowArgumentException()
         {
             var input = "IIII";
+            var exception = Assert.Throws<ArgumentException>(() => input.ParseRomanNumeral());
+            Assert.Equal("Empty or invalid Roman numeral string.\r\nParameter name: input", exception.Message);
+        }
+
+        [Fact]
+        public void ParseRomanNumeral_GivenMMMM_ShouldThrowArgumentException()
+        {
+            var input = "MMMM";
             var exception = Assert.Throws<ArgumentException>(() => input.ParseRomanNumeral());
             Assert.Equal("Empty or invalid Roman numeral string.\r\nParameter name: input", exception.Message);
         }
