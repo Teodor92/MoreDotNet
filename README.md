@@ -211,7 +211,7 @@ testStringVar.IsNullOrWhiteSpace()
 
 NOTE: The package is still under development and some bugs may exist!
 
-You can install this library using NuGet into your project:
+You can install the library using NuGet into your project:
 
 ```
 Install-Package MoreDotNet
