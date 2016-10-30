@@ -119,6 +119,9 @@
     <Compile Include="Extensions\Collections\CollectionExtensions\IsNullOrEmptyTests.cs" />
     <Compile Include="Extensions\Common\ColorExtensions\ToHexStringTests.cs" />
     <Compile Include="Extensions\Common\ColorExtensions\ToRgbStringTests.cs" />
+    <Compile Include="Extensions\Common\ConvertibleExtensions\ToOrDefaultTests.cs" />
+    <Compile Include="Extensions\Common\ConvertibleExtensions\ToOrNullTests.cs" />
+    <Compile Include="Extensions\Common\ConvertibleExtensions\ToOrOtherTests.cs" />
     <Compile Include="Extensions\Common\DataExtensions\GetNullableTests.cs" />
     <Compile Include="Extensions\Common\GenericExtensions\GetMemberNameTests.cs" />
     <Compile Include="Extensions\Common\GenericExtensions\IsBetweenTests.cs" />
@@ -165,6 +168,7 @@
     <Compile Include="Wrappers\StringWrappersTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\Common\ConvertibleExtensions\ToTests.cs" />
     <None Include="MoreDotNet.Tests.ruleset" />
     <None Include="packages.config" />
   </ItemGroup>
