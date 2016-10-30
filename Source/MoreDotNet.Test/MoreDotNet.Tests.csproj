@@ -145,6 +145,9 @@
     <Compile Include="Extensions\Common\StringExtensions\ToTitleCaseTests.cs" />
     <Compile Include="Extensions\Common\StringExtensions\CaseToWordsTests.cs" />
     <Compile Include="Extensions\Common\TypeExtensions\TypeExtensionsTests.cs" />
+    <Compile Include="Extensions\Numeric\RomanNumeralExtensions\IsValidRomanNumeralTests.cs" />
+    <Compile Include="Extensions\Numeric\RomanNumeralExtensions\ParseRomanNumeralTests.cs" />
+    <Compile Include="Extensions\Numeric\RomanNumeralExtensions\ToRomanNumeralStringTests.cs" />
     <Compile Include="Helpers\FileHelpers\SaveByteArrayToTempFileTests.cs" />
     <Compile Include="Helpers\FileHelpers\SaveStringToTempFileTests.cs" />
     <Compile Include="Models\FakeSerializationClass.cs" />
@@ -176,6 +179,7 @@
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
